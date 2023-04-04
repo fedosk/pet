@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    // noImplicitAny is a TypeScript compiler option that prevents the use of implicit any type declarations. When this option is enabled, the compiler will issue an error if a variable or function parameter does not have an explicit type annotation and cannot be inferred from its usage.
+    "noImplicitAny": true,
+    "module": "ESNext",
+    "target": "es5",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "moduleResolution": "node",
+    // In TypeScript, esModuleInterop is a flag that allows for compatibility with modules that use export = syntax. This flag modifies the output of TypeScript's compiler to use require() and exports instead of import and export for interoperation with CommonJS modules.
+    // When esModuleInterop is set to true, the compiler generates code that allows the use of both CommonJS and ECMAScript-style modules in the same project. This can be useful when working with third-party libraries that use CommonJS modules, while using ECMAScript modules in your own code.
+    // Setting esModuleInterop to true also enables the use of default imports from modules with export = syntax. Without this flag, TypeScript generates code that creates an object with the exported value as a property. With this flag, the exported value is imported directly as the default export of the module.
+    "esModuleInterop": true,
+    // In TypeScript, allowSyntheticDefaultImports is a compiler option that allows modules that don't have a default export to be imported as if they did have one. When this option is enabled, TypeScript generates an additional synthetic default export for each module, which is essentially a named export that is aliased as the default export. This enables the module to be imported using the import ModuleName from 'module-name' syntax instead of having to use the import * as ModuleName from 'module-name' syntax, which can be more concise and easier to read.
+    // This option can be useful when working with modules that were not originally designed to work with ES6-style imports, or when migrating legacy code that relies on the require function. However, it's important to note that enabling this option can sometimes lead to unexpected behavior if the module being imported doesn't actually have a default export.
+    "allowSyntheticDefaultImports": true
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
