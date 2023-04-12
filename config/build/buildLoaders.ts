@@ -20,7 +20,12 @@ export const buildLoaders = (
       {
         loader: 'css-loader',
         options: {
-          modules: true,
+          modules: {
+            auto: (resPath: string) => !!resPath.match(/\.module\./),
+            localIdentName: options.isDev
+              ? '[path][name]__[local]--[hash:base64:5]'
+              : '[hash:base64:8]',
+          },
         },
       },
       // Compiles Sass to CSS
