@@ -1,0 +1,37 @@
+@import '../variables/colorsVariables.scss';
+
+.app.dark {
+  --color-bg: var(--g100);
+  --color-block: var(--g90);
+  --color-block-active: var(--g80);
+  --color-line: var(--g70);
+
+  --color-font: var(--g10);
+  --color-font-a: var(--white);
+  --color-font-d: var(--g20);
+  
+  --color-primary-default: #FF82A5;
+  --color-primary-dark: #B80034;
+  --color-primary-light: #FFDEE7;
+  --color-primary-bg: #FFF5F8;
+
+  --color-secondary-default: #0084FF;
+  --color-secondary-dark: #041422;
+  --color-secondary-light: #EBF5FF;
+  --color-secondary-bg: #EBEFF2;
+
+  --color-success-default: #82FFE4;
+  --color-success-dark: #00B78F;
+  --color-success-light: #DEFFF8;
+  --color-success-bg: #F1FFFC;
+
+  --color-error-default: #FF82A5;
+  --color-error-dark: #B80034;
+  --color-error-light: #FFDEE7;
+  --color-error-bg: #FFF5F8;
+
+  --color-warning-default: #FFCC89;
+  --color-warning-dark: #CB7300;
+  --color-warning-light: #FFF1DF;
+  --color-warning-bg: #FFF8EF;
+}

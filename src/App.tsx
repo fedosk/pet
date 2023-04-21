@@ -1,15 +1,18 @@
-import { Suspense } from 'react';
+import { Suspense, useContext } from 'react';
 
-import './index.scss';
+import './styles/index.scss';
 import { Routes, Route, Link } from 'react-router-dom';
-import MainPage from './pages/MainPage/MainPage';
-import AboutPage from './pages/AboutPage/AboutPage';
 import { AboutPageAsync } from './pages/AboutPage/AboutPage.async';
 import { MainPageAsync } from './pages/MainPage/MainPage.async';
+import { useTheme } from './theme/useTheme';
 
-function App() {
+
+const App = () => {
+  const { theme, changeTheme } = useTheme();
+
   return (
-    <div className='app'>
+    <div className={`app ${theme}`}>
+      <button onClick={changeTheme}>Change theme</button>
       <Link to={'/'}>Главная</Link>
       <Link to={'/about'}>О сайте</Link>
       <Suspense fallback={<div>Loading...</div>}>
@@ -20,6 +23,6 @@ function App() {
       </Suspense>
     </div>
   );
-}
+};
 
 export default App;

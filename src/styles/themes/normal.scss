@@ -1,0 +1,37 @@
+@import '../variables/colorsVariables.scss';
+
+.app.normal {
+  --color-bg: var(--white);
+  --color-block: var(--g10);
+  --color-block-active: var(--g20);
+  --color-line: var(--g30);
+
+  --color-font: var(--g100);
+  --color-font-a: var(--black);
+  --color-font-d: var(--g90);
+
+  --color-primary-default: #ee0045;
+  --color-primary-dark: #b80034;
+  --color-primary-light: #ffdee7;
+  --color-primary-bg: #fff5f8;
+
+  --color-secondary-default: #002242;
+  --color-secondary-dark: #041422;
+  --color-secondary-light: #ebf5ff;
+  --color-secondary-bg: #ebeff2;
+
+  --color-success-default: #27e8bf;
+  --color-success-dark: #00b78f;
+  --color-success-light: #defff8;
+  --color-success-bg: #f1fffc;
+
+  --color-error-default: #ee0045;
+  --color-error-dark: #b80034;
+  --color-error-light: #ffdee7;
+  --color-error-bg: #fff5f8;
+
+  --color-warning-default: #feac40;
+  --color-warning-dark: #cb7300;
+  --color-warning-light: #fff1df;
+  --color-warning-bg: #fff8ef;
+}
