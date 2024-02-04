@@ -15,6 +15,7 @@
     // In TypeScript, allowSyntheticDefaultImports is a compiler option that allows modules that don't have a default export to be imported as if they did have one. When this option is enabled, TypeScript generates an additional synthetic default export for each module, which is essentially a named export that is aliased as the default export. This enables the module to be imported using the import ModuleName from 'module-name' syntax instead of having to use the import * as ModuleName from 'module-name' syntax, which can be more concise and easier to read.
     // This option can be useful when working with modules that were not originally designed to work with ES6-style imports, or when migrating legacy code that relies on the require function. However, it's important to note that enabling this option can sometimes lead to unexpected behavior if the module being imported doesn't actually have a default export.
     "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
     "plugins": [{ "name": "typescript-plugin-css-modules" }],
   },
   "ts-node": {
